@@ -4,7 +4,7 @@ import logo from "/Users/carlalopez/Documents/Openclassrooms/Projet 8/Workflow/k
 
 export default function Header(){
     // const location = uselocation();
-    return <div className={styles.header}>
+    return <header className={styles.header}>
                 <img src={logo} alt="Logo du site Kasa"></img>
                 {/* <Link
                 to="/"
@@ -14,5 +14,5 @@ export default function Header(){
             </Link> */}
                 <a href="/">Accueil</a>
                 <a href="/about">A propos</a>
-            </div>;
-}
+            </header>
+};
