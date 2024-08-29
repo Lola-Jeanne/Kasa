@@ -12,7 +12,9 @@ export default function Header(){
             >
                 Accueil
             </Link> */}
-                <a href="/">Accueil</a>
-                <a href="/about">A propos</a>
+                <div>
+                    <a href="/">Accueil</a>
+                    <a href="/about">A propos</a>
+                </div>
             </header>
 };
