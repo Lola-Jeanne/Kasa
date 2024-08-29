@@ -1,11 +1,10 @@
-// import './index.scss'
 import Header from "../../components/Header/header";
 
-function Home () {
+function About () {
     return (
         <div>
             <Header />
         </div>
     )
 }
-export default Home;
+export default About;

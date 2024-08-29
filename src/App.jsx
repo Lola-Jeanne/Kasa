@@ -2,16 +2,24 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Home from './pages/Home/index'
+import Error from './components/Error/Error'
+import About  from './pages/About/about'
+import Logement from './pages/Logement/logement'
 
-ReactDOM.Renderer(
-  <React.StrictMode>
-    <Router>
+function App () {
+  return (
+    <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/logement" element={<Logement />} />
       </Routes>
-    </Router>
-  </React.StrictMode>
-)
+    </BrowserRouter>
+  )
+}
+
+export default App; 
 
 // import  { Browserrouter as Router, Route, Routes } from 'react-router-dom'
 // import Home from './pages/Home/index'

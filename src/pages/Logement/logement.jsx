@@ -1,9 +1,12 @@
-function Test() {
+import Header from "../../components/Header/header";
+
+function Logement() {
     return (
+
         <div>
-            <h1>Ceci est un test ✨</h1>
+            <Header />
         </div>
     )
 }
 
-export default Test
+export default Logement;
