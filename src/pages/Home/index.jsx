@@ -2,16 +2,18 @@ import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import Banner from "../../components/Banner/banner";
 import Cards from "../../components/Cards/cards";
+import bannerPicOne from "../../assets/Banner-IMG-One.png";
+
 
 function Home () {
     return (
         <div>
             <Header />
-            {/* <div>
-                <Banner />
-            </div> */}
             <div>
-                <Cards />
+                <Banner title="Chez vous, partout et ailleurs" urlImage={bannerPicOne}/>
+            </div>
+            <div>
+                {/* <Cards /> */}
             </div>
             <div>
                 <Footer />

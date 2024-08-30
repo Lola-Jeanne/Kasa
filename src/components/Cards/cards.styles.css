@@ -1,4 +1,7 @@
 div {
+  width: 1240px;
+  height: 829px;
+  flex-shrink: 0;
   border-radius: 25px;
   background: #F6F6F6;
 }
