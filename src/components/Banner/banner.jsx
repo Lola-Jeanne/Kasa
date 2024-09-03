@@ -1,8 +1,8 @@
-import styles from "./banner.styles.scss";
-// import bannerPicOne from "/Users/carlalopez/Documents/Openclassrooms/Projet 8/Workflow/kasa/src/assets/Banner-IMG-One.png";
+import stylesBanner from "./banner.styles.scss";
+
 
 export default function Banner({title, urlImage}){
-    return<div className={styles.banner}>
+    return<div className={stylesBanner}>
         <div className="banner">
             <img src={urlImage} className="imgBanner"></img>
             <p className="txtBanner">{title}</p>

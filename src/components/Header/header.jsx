@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styles from "./header.styles.scss";
-import logo from "/Users/carlalopez/Documents/Openclassrooms/Projet 8/Workflow/kasa/src/assets/LOGO.svg";
+import logo from "../../assets/LOGO.svg";
 
 export default function Header(){
     return <header className={styles.header}>

@@ -1,9 +1,9 @@
-.banner {
+div {
   display: flex;
   justify-content: center;
 }
 
-.banner .imgBanner {
+div .banner .imgBanner {
   width: 1000px;
   height: 223px;
   flex-shrink: 0;
@@ -14,7 +14,7 @@
   mix-blend-mode: darken;
 }
 
-.banner .txtBanner {
+div .banner .txtBanner {
   color: #FFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-color: #000;

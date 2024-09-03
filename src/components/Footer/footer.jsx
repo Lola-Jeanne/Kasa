@@ -1,6 +1,7 @@
 import styles from "./footer.styles.scss";
-import logoWhite from "/Users/carlalopez/Documents/Openclassrooms/Projet 8/Workflow/kasa/src/assets/LOGO-white.svg";
+import logoWhite from "../../assets/LOGO-white.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCopyright} from '@fortawesome/free-regular-svg-icons';
 
 export default function Footer(){
     return <footer className={styles.footer}>
@@ -8,7 +9,7 @@ export default function Footer(){
                 <img src={logoWhite} alt="Logo du site Kasa en blanc"></img>
             </div>
             <div>
-                <FontAwesomeIcon icon="fa-regular fa-copyright" style={{color: "#fcfcfc",}} />
+                <FontAwesomeIcon icon={faCopyright} style={{color: "#fcfcfc",}} />
                 <p>2020 Kasa. All rights reserved</p>
             </div>
     </footer>
