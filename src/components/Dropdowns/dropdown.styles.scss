@@ -25,9 +25,23 @@
             align-self: stretch;
             text-align-last: left;
 
-            btn {
-                color: white;
+            .btnouvert {
                 margin-left: auto;
+                background: none;
+                border: none;
+                color: white;
+
+
+                .openContent {
+                    background-color: #F6F6F673;
+                    align-items: flex-start;
+                    gap: 10px;
+                    display: flex;
+                    width: 1023px;
+                    height: 53px;
+                    padding: 10px 20px 10px 15px;
+                    border-radius: 5px;
+                }
             }
         }
     }

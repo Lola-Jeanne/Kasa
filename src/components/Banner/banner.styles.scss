@@ -3,13 +3,13 @@
     justify-content: center;
 
     .banner{
-        width: 1000px;
+        width: 1240px;
         height: 223px;
         border-radius: 25px;
         background: #000;
 
         .imgBanner {
-            width: 1000px;
+            width: 1240px;
             height: 223px;
             object-fit: cover;
             border-radius: 25px;
@@ -27,6 +27,8 @@
             margin: 0;
             display: flex;
             justify-content: center;
+            position: relative;
+            bottom: 150px;
         }
     }
 }

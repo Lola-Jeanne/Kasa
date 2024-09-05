@@ -1,28 +1,40 @@
 import "./dropdown.styles.scss";
+import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { fa-solid } from '@fortawesome/free-regular-svg-icons';
 // import { a-chevron-up } from '@fortawesome/free-regular-svg-icons';
 
 export default function Dropdowns(){
+    const [isOpen, setIsOpen] = useState(false)
+
+    const dropdownContent = () =>{
+        setIsOpen(!isOpen);
+    };
+
     return<div className="container">
         <div>
             <p className="txtBouton">Fiabilité</p>
-            <btn>
-            test
+            <button className="btnouvert" onClick={dropdownContent}>
+                {isOpen ? 'Fermer' : 'Ouvrir'}
                 {/* <FontAwesomeIcon icon={fa-solid fa-chevron-up} style={{color: "#ffffff",}} /> */}
-            </btn>
+            </button>
+            {isOpen && (
+                <div className="openContent">
+                    <p>test contenu ouvert</p>
+                </div>
+            )}
         </div>
         <div>
             <p className="txtBouton">Respect</p>
-            <btn>test</btn>
+            <button>test</button>
         </div>
         <div>
             <p className="txtBouton">Service</p>
-            <btn>test</btn>
+            <button>test</button>
         </div>
         <div>
             <p className="txtBouton">Securité</p>
-            <btn>test</btn>
+            <button>test</button>
         </div>
     </div>
 }

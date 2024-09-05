@@ -14,7 +14,7 @@ function Home () {
                 <Banner title="Chez vous, partout et ailleurs" urlImage={bannerPicOne}/>
             </div>
             <div>
-                {/* <Cards /> */}
+                <Cards />
             </div>
             <div>
                 <Footer />
