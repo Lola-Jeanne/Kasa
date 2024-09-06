@@ -3,12 +3,16 @@
     justify-content: center;
 
     .cardsContainer{
-        width: 1240px;
+        width: 100%;
         border-radius: 25px;
         background: #F6F6F6;
         display: flex;
-        margin-top: 43px;
-        margin-bottom: 50px;
         flex-wrap: wrap;
+        margin: 25px 25px 50px 43px;
+        justify-content: center;
+
+        @media (max-width: 800px){
+            background: none;
+        }
     }
 }

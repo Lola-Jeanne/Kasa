@@ -8,7 +8,7 @@ h1 {
     margin: 0;
 }
 
-p {
+.txtError {
     color: #FF6060;
     font-size: 36px;
     font-style: normal;
@@ -17,7 +17,8 @@ p {
     text-align-last: center;
 }
 
-a {
+.btnRetour {
+    margin-bottom: 139px;
     color: #000;
     font-size: 18px;
     font-style: normal;
@@ -26,8 +27,4 @@ a {
     text-decoration-line: underline;
     display: flex;
     justify-content: center;
-}
-
-.btnRetour {
-    margin-bottom: 139px;
 }
