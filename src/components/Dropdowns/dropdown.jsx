@@ -18,11 +18,9 @@ export default function Dropdowns(){
                 {isOpen ? 'Fermer' : 'Ouvrir'}
                 {/* <FontAwesomeIcon icon={fa-solid fa-chevron-up} style={{color: "#ffffff",}} /> */}
             </button>
-            {isOpen && (
-                <div className="openContent">
+                <div className={isOpen ? "closeContent": "openContent"}>
                     <p>test contenu ouvert</p>
                 </div>
-            )}
         </div>
         <div>
             <p className="txtBouton">Respect</p>

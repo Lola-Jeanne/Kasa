@@ -4,11 +4,11 @@
 
     .cardsContainer{
         width: 1240px;
-        height: 829px;
         border-radius: 25px;
         background: #F6F6F6;
         display: flex;
         margin-top: 43px;
         margin-bottom: 50px;
+        flex-wrap: wrap;
     }
 }

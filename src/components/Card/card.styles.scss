@@ -1,0 +1,28 @@
+.card {
+    width: 340px;
+    height: 340px;
+    margin-top: 56px;
+    margin-left: 50px;
+    margin-bottom: 46px;
+
+
+    img{
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    p{
+        margin: 0px;
+        position: relative;
+        width: 300px;
+        font-size: 18px;
+        bottom: 65px;
+        color: black;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        text-align: -webkit-center;
+    }
+}
