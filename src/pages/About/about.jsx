@@ -9,13 +9,13 @@ function About () {
         <div>
             <Header />
             <div>
+                <Banner urlImage={bannerPicTwo}/>
+            </div>
+            <div>
+                <Dropdowns buttonText="DropdownButton" content={<p>Test</p>}/> 
+            </div>
+            <div>
                 <Footer />
-                <div>
-                    <Banner urlImage={bannerPicTwo}/>
-                </div>
-                <div>
-                    <Dropdowns /> 
-                </div>
             </div>
         </div>
     )

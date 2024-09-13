@@ -20,7 +20,7 @@ export default function Cards(){
             {Logements.map((logement) => (
                
                     <article key={logement.id}>                        
-                        <NavLink to={`/fichelogement/${logement.id}`}>
+                        <NavLink to={`/logement/${logement.id}`}>
                             <Card image={logement.cover} title={logement.title} />
                         </NavLink>
                     </article>                                            
