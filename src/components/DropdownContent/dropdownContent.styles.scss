@@ -17,7 +17,7 @@
 .content-open{
     opacity: 1;
     visibility: visible;
-    position: absolute;
+    // position: absolute;
     width: 1023px;
     display: flex;
     flex-direction: column;
@@ -31,4 +31,5 @@
 
 .hide-content {
     visibility: hidden;
+    height: 0px;
 }
