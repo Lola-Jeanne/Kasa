@@ -1,11 +1,36 @@
-import '../Carousel/carousel.styles.scss'
+import '../Carousel/carousel.styles.scss';
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { useState } from 'react';
 
-export default function Carousel({ data }){
+export const Carousel = ({ data }) => {
 
-    return (
-    <div>{data.map(( item, id) => {
-        return <img src={item.src} key={id}/>
-    })}</div>
-        
+    const [slide, setSlide] = useState(0);
+
+    const nextSlide = () => {
+        setSlide(slide === data.length - 1 ? 0 : slide + 1);
+    }
+
+    const previousSlide = () => {
+        setSlide(slide === 0 ? data.length - 1 : slide - 1);
+    }
+
+
+    return(
+    <div className='carousel'>
+        <FaAngleLeft className='arrow arrow-left' onClick={previousSlide}/>
+        {data && data.length > 0 ? (
+            data.map((item, id) => {
+                return (
+                <img src={item} key={id} className={slide === id ? "slide" : "slide slide-hidden"} alt="carousel d'image sur les logements"></img>); 
+            })
+        ) : (
+        <p>Erreur: no data</p>
+    )}
+        <FaAngleRight className='arrow arrow-right' onClick={nextSlide}/>
+        <div className='img-count'>
+            {slide + 1} / {data?.length}
+        </div>
+    </div>
     );
 };
+export default Carousel;

@@ -14,14 +14,12 @@ function Logement() {
 
     const Logement = Logements.find((Logement) => Logement.id === id);
 
-    // const pictures = useFetchData(`/datas.json`);
-
     return (
 
         <div>
             <Header />
             <div>
-                <div>
+                <div className="carousel-area">
                     <Carousel data={Logement?.pictures} />
                 </div>
                 <div className="logement-title">{Logement?.title}</div>

@@ -1,4 +1,4 @@
-import styles from "./cards.styles.scss";
+import "./cards.styles.scss";
 import React from "react"
 import { NavLink } from "react-router-dom"
 /* Import du hook personnalisé useFetchData */
