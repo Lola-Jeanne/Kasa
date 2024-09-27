@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useFetchData } from "../../components/FetchData/fetchData.js"
 import '../Logement/logement.styles.scss'
 import Carousel from "../../components/Carousel/carousel.jsx";
+import Host from "../../components/Host/host.jsx";
 
 function Logement() {
 
@@ -18,18 +19,30 @@ function Logement() {
 
         <div>
             <Header />
-            <div>
+            <div className="logement-content">
                 <div className="carousel-area">
                     <Carousel data={Logement?.pictures} />
                 </div>
-                <div className="logement-title">{Logement?.title}</div>
-                <div className="logement-location">{Logement?.location}</div>
-                <div>{Logement?.tags}</div>
+                <div className="info-area">
+                    <div className="logement-title">{Logement?.title}</div>
+                    <div className="logement-location">{Logement?.location}</div>
+                    <Host data={Logement?.host} />
+                </div>
+                <div className="tags-area">
+                    {Logement?.tags.map((tag) => (
+                        <div className="tags-content">
+                            <div className="tags">
+                                {tag}
+                            </div>
+                        </div>
+                        )
+                    )}
+                </div>
                 <div className="dropdownArea">
-                <Dropdowns buttonText="Description" content={<p className="text-content">{Logement?.description}</p>}/> 
+                    <Dropdowns buttonText="Description" content={<p className="text-content">{Logement?.description}</p>}/> 
+                </div>
             </div>
-                <Footer />
-            </div>
+            <Footer />
         </div>
     )
 }

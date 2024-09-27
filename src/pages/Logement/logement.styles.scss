@@ -1,21 +1,59 @@
-.logement-title {
-    color: #FF6060;
-    font-size: 36px;
-    font-style: normal;
-    line-height: 142.6%;
+.logement-content{
     margin-left: 50px;
-}
+    margin-right: 50px;
 
-.logement-location{
-    color: #000;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
-    margin-left: 50px;
-}
+    .carousel-area{
+        display: flex;
+        justify-content: center;
+    }
 
-.carousel-area{
-    display: flex;
-    justify-content: center;
+    .info-area{
+        width: 100%;
+        height: 100px;
+
+        .logement-title {
+            color: #FF6060;
+            font-size: 36px;
+            font-style: normal;
+            line-height: 142.6%;
+            margin-left: 50px;
+            font-weight: 300;
+            width: 100%;
+            margin-top: 30px;
+        }
+    
+        .logement-location{
+            color: #000;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 142.6%;
+            margin-left: 50px;
+            width: 50%;
+        }
+    }
+
+    .tags-area{
+        display: flex;
+        gap: 10px;
+        margin-left: 50px;
+        width: 50%;
+    
+        .tags-content {
+            height: 25px;
+            color: #FFF;
+            text-align: center;
+            font-weight: 700;
+            line-height: 142.6%;
+            display: flex;
+            align-items: center;
+    
+            .tags {
+                border-radius: 20px;
+                background: #FF6060;
+                padding: 2px 30px 2px 30px;
+                margin-left: 5px;
+            }
+        }
+    }
 }

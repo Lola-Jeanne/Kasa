@@ -1,0 +1,25 @@
+.host-content{
+    position: relative;
+    bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 50px;
+
+    .host-name{
+        color: #FF6060;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 142.6%;
+        width: min-content;
+        text-align: right;
+    }
+    
+    .host-picture{
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+    }
+}

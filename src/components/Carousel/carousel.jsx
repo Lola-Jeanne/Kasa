@@ -17,7 +17,6 @@ export const Carousel = ({ data }) => {
 
     return(
     <div className='carousel'>
-        <FaAngleLeft className='arrow arrow-left' onClick={previousSlide}/>
         {data && data.length > 0 ? (
             data.map((item, id) => {
                 return (
@@ -26,10 +25,16 @@ export const Carousel = ({ data }) => {
         ) : (
         <p>Erreur: no data</p>
     )}
+    {/* Ajout condition pour logements avec une seule image */}
+    {data && data.length > 1 && 
+    <>
+        <FaAngleLeft className='arrow arrow-left' onClick={previousSlide}/>
         <FaAngleRight className='arrow arrow-right' onClick={nextSlide}/>
         <div className='img-count'>
             {slide + 1} / {data?.length}
         </div>
+    </>
+    }
     </div>
     );
 };
