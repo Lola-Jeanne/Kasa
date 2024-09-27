@@ -17,7 +17,7 @@
             font-style: normal;
             line-height: 142.6%;
             margin-left: 50px;
-            font-weight: 300;
+            font-weight: 400;
             width: 100%;
             margin-top: 30px;
         }
@@ -33,26 +33,33 @@
         }
     }
 
-    .tags-area{
+    .rating-tags{
         display: flex;
-        gap: 10px;
-        margin-left: 50px;
-        width: 50%;
-    
-        .tags-content {
-            height: 25px;
-            color: #FFF;
-            text-align: center;
-            font-weight: 700;
-            line-height: 142.6%;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .tags-area{
             display: flex;
-            align-items: center;
-    
-            .tags {
-                border-radius: 20px;
-                background: #FF6060;
-                padding: 2px 30px 2px 30px;
-                margin-left: 5px;
+            gap: 10px;
+            margin-left: 50px;
+            width: 50%;
+        
+            .tags-content {
+                height: 25px;
+                color: #FFF;
+                text-align: center;
+                font-weight: 700;
+                line-height: 142.6%;
+                display: flex;
+                align-items: center;
+        
+                .tags {
+                    border-radius: 10px;
+                    background: #FF6060;
+                    padding: 2px 30px 2px 30px;
+                    margin-left: 5px;
+                }
             }
         }
     }

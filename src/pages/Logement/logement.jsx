@@ -6,6 +6,7 @@ import { useFetchData } from "../../components/FetchData/fetchData.js"
 import '../Logement/logement.styles.scss'
 import Carousel from "../../components/Carousel/carousel.jsx";
 import Host from "../../components/Host/host.jsx";
+import Rating from "../../components/Rating/rating.jsx";
 
 function Logement() {
 
@@ -28,15 +29,18 @@ function Logement() {
                     <div className="logement-location">{Logement?.location}</div>
                     <Host data={Logement?.host} />
                 </div>
-                <div className="tags-area">
-                    {Logement?.tags.map((tag) => (
-                        <div className="tags-content">
-                            <div className="tags">
-                                {tag}
+                <div className="rating-tags">
+                    <Rating data={Logement?.rating} />
+                    <div className="tags-area">
+                        {Logement?.tags.map((tag) => (
+                            <div className="tags-content">
+                                <div className="tags">
+                                    {tag}
+                                </div>
                             </div>
-                        </div>
-                        )
-                    )}
+                            )
+                        )}
+                    </div>
                 </div>
                 <div className="dropdownArea">
                     <Dropdowns buttonText="Description" content={<p className="text-content">{Logement?.description}</p>}/> 
