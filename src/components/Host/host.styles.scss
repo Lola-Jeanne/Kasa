@@ -7,6 +7,13 @@
     gap: 10px;
     margin-right: 50px;
 
+    @media (max-width: 800px){
+        position: relative;
+        top: 55px;
+        margin-right: 0px;
+        right: 50px;
+    }
+
     .host-name{
         color: #FF6060;
         font-size: 18px;
