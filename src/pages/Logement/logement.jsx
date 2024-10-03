@@ -43,7 +43,12 @@ function Logement() {
                     </div>
                 </div>
                 <div className="dropdownArea">
-                    <Dropdowns buttonText="Description" content={<p className="text-content">{Logement?.description}</p>}/> 
+                    <Dropdowns buttonText="Description" content={<p className="text-content">{Logement?.description}</p>}/>
+                    <Dropdowns buttonText="Équipements" content={<p className="text-content">
+                        {Logement?.equipments.map((equipments, idx) => (
+                            <li key={idx}>{equipments}</li>
+                        ))}
+                        </p>}/> 
                 </div>
             </div>
             <Footer />
