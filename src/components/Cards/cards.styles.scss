@@ -8,11 +8,17 @@
         background: #F6F6F6;
         display: flex;
         flex-wrap: wrap;
-        margin: 25px 25px 50px 43px;
+        margin: 25px 25px 50px 25px;
         justify-content: center;
+        gap: 30px;
 
         @media (max-width: 800px){
             background: none;
+        }
+
+        article {
+            display: flex;
+            text-align: -webkit-center;
         }
     }
 }
