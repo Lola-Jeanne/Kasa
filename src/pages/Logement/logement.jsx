@@ -1,7 +1,7 @@
 import Header from "../../components/Header/header";
 import Footer from "../../components/Footer/footer";
 import Dropdowns from "../../components/Dropdowns/dropdown";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useFetchData } from "../../components/FetchData/fetchData.js"
 import '../Logement/logement.styles.scss'
 import Carousel from "../../components/Carousel/carousel.jsx";
@@ -15,6 +15,14 @@ function Logement() {
     const Logements = useFetchData(`/datas.json`);
 
     const Logement = Logements.find((Logement) => Logement.id === id);
+
+    const navigate = useNavigate(); 
+
+    // Vérifier si l'id du logement est valide sinon redirection page erreur
+    
+    if(!Logement) {
+        navigate('/error'); 
+    }
 
     return (
 
@@ -32,9 +40,9 @@ function Logement() {
                 <div className="rating-tags">
                     <Rating data={Logement?.rating} />
                     <div className="tags-area">
-                        {Logement?.tags.map((tag) => (
+                        {Logement?.tags.map((tag, idx) => (
                             <div className="tags-content">
-                                <div className="tags">
+                                <div className="tags" key={idx}>
                                     {tag}
                                 </div>
                             </div>
