@@ -55,7 +55,7 @@
 
         @media (max-width: 800px){
             flex-direction: column-reverse;
-            margin-top: 35px;
+            margin-top: 25px;
             min-width: 390px;
         }
 
@@ -67,7 +67,7 @@
             height: 100%;
 
             @media (max-width: 800px){
-                margin-left: 0px;
+                margin-right: 30px;
                 position: relative;
                 justify-content: center;
                 min-width: 200px;

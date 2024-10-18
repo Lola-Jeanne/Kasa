@@ -30,11 +30,11 @@
         font-weight: 700;
         display: flex;
         justify-content: center;
-        text-align: -webkit-center;
+        text-align: left;
         display: inline-flex;
 
         @media (max-width: 800px){
-            float: left;
+            justify-content: left;
         }
     }
 }
